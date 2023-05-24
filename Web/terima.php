@@ -286,6 +286,7 @@
                 }
             }
         } 
+        $conn->close();
     }
 
     // Execute the SQL query
@@ -318,7 +319,6 @@
     // }
 
     // Close the database connection
-    $conn->close();
 
     ?>
 

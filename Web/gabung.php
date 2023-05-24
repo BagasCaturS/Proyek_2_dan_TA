@@ -1,2 +1,2 @@
 <?php include 'landing.php'; ?>
-<?php include 'proses.php'; ?>
+<?php include 'terima.php'; ?>
