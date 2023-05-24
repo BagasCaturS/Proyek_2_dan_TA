@@ -36,5 +36,5 @@ for i in range(0, len(rows)):
 df = pd.DataFrame(data, columns=['No', 'Rank', 'University Name', 'Location', 'Score_ova', 'Teaching', "Teaching Rank", 'Research', "Research Rank", 'Citations', "Citations Rank", 'Industry Income', "Industry Income Rank", 'International Outlook', "International Outlook Rank"])
 print(df)
 
-df.to_excel("THE_Ranking.xlsx", index=False)
+df.to_excel("Baru_THE_Ranking.xlsx", index=False)
 print("Data berhasil disimpan ke Excel")
