@@ -129,20 +129,6 @@
             <input type="submit" value="Submit" name="submit">
           </form>
         </ul>
-
-        <!-- <form action="http://localhost/Proyek2baru/Web/proses.php" method="POST">
-            <select name="parameter" class="dropdown-item">
-              <option value="research" name="research">Research</option>
-              <option value="citation" name="citation">Citation</option>
-              <option value="teaching" name="teaching">Teaching</option>
-              <option value="industry_income" name="industry_income">Industry Income</option>
-              <option value="international_outlook" name="international_outlook">International Outlook</option>
-              <option value="ova" name="ova">Overall Score</option>
-              <option value="campus_info" name="campus_info">Campus Info</option>
-            </select>
-        </ul>
-        <input type="submit" value="Submit" name="submit">
-        </form> -->
       </div>
 
       <?php

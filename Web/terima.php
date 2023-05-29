@@ -7,6 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parameter Receiver</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        table {
+            margin-top: 20px;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table th,
+        table td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+    </style>
 </head>
 
 <body>
@@ -288,38 +303,6 @@
         } 
         $conn->close();
     }
-
-    // Execute the SQL query
-    // if ($sql !== "") {
-    //     $result = $conn->query($sql);
-
-    //     if ($result->num_rows > 0) {
-    //         echo "<table>";
-    //         echo "<tr>";
-    //         echo "<th>ID</th>";
-    //         echo "<th>World Rank</th>";
-    //         echo "<th>Nama Universitas</th>";
-    //         echo "<th>Lokasi</th>";
-    //         echo "</tr>";
-
-    //         // Output data of each row
-    //         while ($row = $result->fetch_assoc()) {
-    //             echo "<tr>";
-    //             echo "<td>" . $row["id_info"] . "</td>";
-    //             echo "<td>" . $row["wrld_rank"] . "</td>";
-    //             echo "<td>" . $row["nama_univ"] . "</td>";
-    //             echo "<td>" . $row["lokasi"] . "</td>";
-    //             echo "</tr>";
-    //         }
-
-    //         echo "</table>";
-    //     } else {
-    //         echo "No data available.";
-    //     }
-    // }
-
-    // Close the database connection
-
     ?>
 
     <form action="" method="POST">
