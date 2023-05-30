@@ -317,6 +317,7 @@
         </select>
         <input type="submit" value="Submit" name="submit">
     </form>
+    <a href="landing.php">Kembali ke menu utama</a>
 </body>
 
 </html>
