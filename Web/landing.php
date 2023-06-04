@@ -92,7 +92,7 @@
         $host = "localhost";
         $username = "root";
         $password = "";
-        $database = "coba2";
+        $database = "analisis_the_baru";
 
         // Create a database connection
         $conn = new mysqli($host, $username, $password, $database);
@@ -203,7 +203,7 @@
             }
         } 
         elseif ($selectedParameter === "industry_income") {
-            $sql = "SELECT * FROM industry_income";
+            $sql = "SELECT * FROM income";
             if ($sql !== "") {
                 $result = $conn->query($sql);
     
@@ -237,7 +237,7 @@
             }
         } 
         elseif ($selectedParameter === "international_outlook") {
-            $sql = "SELECT * FROM international_outlook";
+            $sql = "SELECT * FROM int_outlook";
             if ($sql !== "") {
                 $result = $conn->query($sql);
     
@@ -301,7 +301,7 @@
                     echo "</table>";
                 } else {
                     echo "No data available.";
-                }
+                } 
             }
         } 
         elseif ($selectedParameter === "ova") {
