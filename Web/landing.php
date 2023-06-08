@@ -38,7 +38,7 @@
             <a class="nav-link" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">TO come</a>
+            <a class="nav-link" href="index.html">Compare</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">About us</a>
@@ -53,6 +53,7 @@
   <!-- <div class="border"> -->
   <div class="container mt-5">
     <h3>Silahkan pilih parameter yang akan digunakan!</h3>
+    
 
     <div class="mt-5 dropdown">
       <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
