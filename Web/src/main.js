@@ -1,12 +1,12 @@
 for (var i = 1; i < universitas.length; i++) {
     document.getElementById("select1").innerHTML += `
-    <option value="${i}">${universitas[i].title}</option>
+    <option value="${i}">${universitas[i].nama_univ}</option>
     `;
     document.getElementById("select2").innerHTML += `
-    <option value="${i}">${universitas[i].title}</option>
+    <option value="${i}">${universitas[i].nama_univ}</option>
     `;
     document.getElementById("select3").innerHTML += `
-    <option value="${i}">${universitas[i].title}</option>
+    <option value="${i}">${universitas[i].nama_univ}</option>
     `;
 }
 // perubahan disini harus sama dengan yang ada di file html
