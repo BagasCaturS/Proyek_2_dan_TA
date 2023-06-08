@@ -35,13 +35,13 @@
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="landing.php">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="index.html">Compare</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About us</a>
+            <a class="nav-link" href="about.html">About us</a>
           </li>
         </ul>
       </div>
