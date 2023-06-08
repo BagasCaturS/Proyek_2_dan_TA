@@ -75,12 +75,12 @@
     </div>
 
 
-    <?php
+    <!-- <?php
     if (isset($_POST['submit'])) {
       $selectedParameter = $_POST['parameter'];
       echo "<h4>You selected: $selectedParameter</h4>";
     }
-    ?>
+    ?> -->
   </div>
   <!-- </div> -->
   <?php

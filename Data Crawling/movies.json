@@ -1,0 +1,164 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "movie_name": "The Shawshank Redemption",
+      "producer": "Niki Marvin",
+      "director": "Frank Darabont",
+      "plot": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+      "release_date": "1994-09-23"
+    },
+    {
+      "id": 2,
+      "movie_name": "The Godfather",
+      "producer": "Albert S. Ruddy",
+      "director": "Francis Ford Coppola",
+      "plot": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+      "release_date": "1972-03-15"
+    },
+    {
+      "id": 3,
+      "movie_name": "The Dark Knight",
+      "producer": "Emma Thomas, Charles Roven, Christopher Nolan",
+      "director": "Christopher Nolan",
+      "plot": "When the menace known as The Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.",
+      "release_date": "2008-07-18"
+    },
+    {
+      "id": 4,
+      "movie_name": "Pulp Fiction",
+      "producer": "Lawrence Bender",
+      "director": "Quentin Tarantino",
+      "plot": "The lives of two mob hitmen, a boxer, a gangster's wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+      "release_date": "1994-10-14"
+    },
+    {
+      "id": 5,
+      "movie_name": "Fight Club",
+      "producer": "Art Linson, Cean Chaffin, Ross Grayson Bell",
+      "director": "David Fincher",
+      "plot": "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.",
+      "release_date": "1999-10-15"
+    },
+    {
+      "id": 6,
+      "movie_name": "The Matrix",
+      "producer": "Joel Silver",
+      "director": "The Wachowskis",
+      "plot": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+      "release_date": "1999-03-31"
+    },
+    {
+      "id": 7,
+      "movie_name": "Goodfellas",
+      "producer": "Irwin Winkler",
+      "director": "Martin Scorsese",
+      "plot": "The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito.",
+      "release_date": "1990-09-19"
+    },
+    {
+      "id": 8,
+      "movie_name": "Inception",
+      "producer": "Emma Thomas, Christopher Nolan",
+      "director": "Christopher Nolan",
+      "plot": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
+      "release_date": "2010-07-16"
+    },
+    {
+      "id": 9,
+      "movie_name": "The Lord of the Rings: The Fellowship of the Ring",
+      "producer": "Barrie M. Osborne, Peter Jackson, Fran Walsh, Tim Sanders",
+      "director": "Peter Jackson",
+      "plot": "A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.",
+      "release_date": "2001-12-19"
+    },
+    {
+      "id": 10,
+      "movie_name": "Schindler's List",
+      "producer": "Steven Spielberg, Gerald R. Molen, Branko Lustig",
+      "director": "Steven Spielberg",
+      "plot": "In German-occupied Poland during World War II, Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
+      "release_date": "1993-11-30"
+    },
+    {
+      "id": 11,
+      "movie_name": "Forrest Gump",
+      "producer": "Wendy Finerman, Steve Tisch, Steve Starkey",
+      "director": "Robert Zemeckis",
+      "plot": "The presidencies of Kennedy and Johnson, the Vietnam War, the Watergate scandal, and other historical events unfold through the perspective of an Alabama man with an IQ of 75.",
+      "release_date": "1994-07-06"
+    },
+    {
+      "id": 12,
+      "movie_name": "The Lord of the Rings: The Two Towers",
+      "producer": "Barrie M. Osborne, Peter Jackson, Fran Walsh",
+      "director": "Peter Jackson",
+      "plot": "While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Sauron's new ally, Saruman, and his hordes of Isengard.",
+      "release_date": "2002-12-18"
+    },
+    {
+      "id": 13,
+      "movie_name": "The Silence of the Lambs",
+      "producer": "Ronald M. Bozman, Edward Saxon, Kenneth Utt",
+      "director": "Jonathan Demme",
+      "plot": "A young F.B.I. cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer, a madman who skins his victims.",
+      "release_date": "1991-02-14"
+    },
+    {
+      "id": 14,
+      "movie_name": "Star Wars: Episode IV - A New Hope",
+      "producer": "Gary Kurtz, Rick McCallum",
+      "director": "George Lucas",
+      "plot": "Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee, and two droids to save the galaxy from the Empire's world-destroying battle station.",
+      "release_date": "1977-05-25"
+    },
+    {
+      "id": 15,
+      "movie_name": "Interstellar",
+      "producer": "Emma Thomas, Christopher Nolan, Lynda Obst",
+      "director": "Christopher Nolan",
+      "plot": "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+      "release_date": "2014-11-07"
+    },
+    {
+      "id": 16,
+      "movie_name": "Seven",
+      "producer": "Arnold Kopelson, Phyllis Carlyle",
+      "director": "David Fincher",
+      "plot": "Two detectives, a rookie and a veteran, hunt a serial killer who uses the seven deadly sins as his motives.",
+      "release_date": "1995-09-22"
+    },
+    {
+      "id": 17,
+      "movie_name": "The Lion King",
+      "producer": "Don Hahn",
+      "director": "Roger Allers, Rob Minkoff",
+      "plot": "Lion prince Simba and his father are targeted by his bitter uncle, who wants to ascend the throne himself.",
+      "release_date": "1994-06-15"
+    },
+    {
+      "id": 18,
+      "movie_name": "Gone with the Wind",
+      "producer": "David O. Selznick",
+      "director": "Victor Fleming",
+      "plot": "A manipulative woman and a roguish man conduct a turbulent romance during the American Civil War and Reconstruction periods.",
+      "release_date": "1939-12-15"
+    },
+    {
+      "id": 19,
+      "movie_name": "The Avengers",
+      "producer": "Kevin Feige",
+      "director": "Joss Whedon",
+      "plot": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
+      "release_date": "2012-05-04"
+    },
+    {
+      "id": 20,
+      "movie_name": "The Usual Suspects",
+      "producer": "Bryan Singer, Michael McDonnell, Kenneth Kokin",
+      "director": "Bryan Singer",
+      "plot": "A sole survivor tells of the twisty events leading up to a horrific gun battle on a boat, which began when five criminals met at a seemingly random police lineup.",
+      "release_date": "1995-08-16"
+    }
+  ]
+}
