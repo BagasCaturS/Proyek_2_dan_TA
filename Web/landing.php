@@ -72,16 +72,14 @@
           </select>
           <input type="submit" value="Submit" name="submit">
         </form>
+        <!-- <form action="landing.php">
+        <input type="text" name="university_name" placeholder="Enter university name">
+
+        </form> -->
       </ul>
     </div>
 
 
-    <!-- <?php
-    if (isset($_POST['submit'])) {
-      $selectedParameter = $_POST['parameter'];
-      echo "<h4>You selected: $selectedParameter</h4>";
-    }
-    ?> -->
   </div>
   <!-- </div> -->
   <?php
@@ -102,8 +100,9 @@
         if ($conn->connect_error) {
             die("Connection failed: " . $conn->connect_error);
         }
+        // $universityName = $_POST['university_name'];
 
-        // SQL query to select data from the respective tables based on the selected parameter
+        // SQL query to select data  from the respective tables based on the selected parameter
         $sql = "";
         if ($selectedParameter === "campus_info") {
             $sql = "SELECT * FROM campus_info";
