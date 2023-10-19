@@ -1,133 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="Description" content="Enter your description here" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
-        td>img {
-            width: 100%;
-            height: 250px;
-            object-fit: contain;
-        }
+      td > img {
+        width: 100%;
+        height: 250px;
+        object-fit: contain;
+      }
     </style>
     <title>Title</title>
-</head>
+  </head>
 
-<body>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">My Logo</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link" href="landing.php">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Compare</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About us</a>
-              </li>
-            </ul>
-          </div>
+  <body>
+    <nav class="navbar sticky-top navbar-expand-sm bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">My Logo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="landing.php">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Compare</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About us</a>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 
     <h1 class="display-5 my-5 text-center">Membandingkan Universitas</h1>
     <div class="container">
-        <div class="col-md-9 mx-auto">
-            <table class="table">
-                <tr class="bg-light">
-                    <th>Pilih Universitas</th>
-                    <th width="300px">
-                        <select class="form-control" id="select1" onchange="item1(this.value)">
-                            <option value="0">-- Select Anyone --</option>
-                        </select>
-                    </th>
-                    <th width="300px">
-                        <select class="form-control" id="select2" onchange="item2(this.value)">
-                            <option value="0">-- Select Anyone --</option>
-                        </select>
-                    </th>
-                    <th width="300px">
-                        <select class="form-control" id="select3" onchange="item3(this.value)">
-                            <option value="0">-- Select Anyone --</option>
-                        </select>
-                    </th>
-                </tr>
-                <!-- <tr>
-                    <th>Product Image</th>
-                    <td>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png"
-                            id="img1" alt=" ">
-                    </td>
-                    <td>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png"
-                            id="img2" alt=" ">
-                    </td>
-                </tr> -->
-                
-                <tr>
-                    <th>Nama Universitas</th>
-                    <td id="univ1">N/A</td>
-                    <td id="univ2">N/A</td>
-                    <td id="univ3">N/A</td>
-                </tr>
-                <tr>
-                    <th>Lokasi</th>
-                    <td id="lokasi1">N/A</td>
-                    <td id="lokasi2">N/A</td>
-                    <td id="lokasi3">N/A</td>
-                </tr>
-                <tr>
-                    <th>World ranking</th>
-                    <td id="wrld_rank1">N/A</td>
-                    <td id="wrld_rank2">N/A</td>
-                    <td id="wrld_rank3">N/A</td>
-                </tr>
-                <tr>
-                    <th>Teaching</th>
-                    <td id="teaching1">N/A</td>
-                    <td id="teaching2">N/A</td>
-                    <td id="teaching3">N/A</td>
-                </tr>
-                <tr>
-                    <th>Research</th>
-                    <td id="research1">N/A</td>
-                    <td id="research2">N/A</td>
-                    <td id="research3">N/A</td>
-                </tr>
-                <tr>
-                    <th>Citations</th>
-                    <td id="citation1">N/A</td>
-                    <td id="citation2">N/A</td>
-                    <td id="citation3">N/A</td>
-                </tr>
-                <tr>
-                    <th>International Outlook</th>
-                    <td id="outlook1">N/A</td>
-                    <td id="outlook2">N/A</td>
-                    <td id="outlook3">N/A</td>
-                </tr>
-            </table>
+      <div class="col-md-9 mx-auto">
+        <table class="table">
+          <tr class="bg-light">
+            <th>Pilih Universitas</th>
+            <th width="300px">
+              <select
+                class="form-control"
+                id="select1"
+                onchange="item1(this.value)"
+              >
+                <option value="0">-- Select Anyone --</option>
+              </select>
+            </th>
+            <th width="300px">
+              <select
+                class="form-control"
+                id="select2"
+                onchange="item2(this.value)"
+              >
+                <option value="0">-- Select Anyone --</option>
+              </select>
+            </th>
+            <th width="300px">
+              <select
+                class="form-control"
+                id="select3"
+                onchange="item3(this.value)"
+              >
+                <option value="0">-- Select Anyone --</option>
+              </select>
+            </th>
+          </tr>
 
-        </div>
+          <tr>
+            <th>Nama Universitas</th>
+            <td id="univ1">N/A</td>
+            <td id="univ2">N/A</td>
+            <td id="univ3">N/A</td>
+          </tr>
+          <tr>
+            <th>Lokasi</th>
+            <td id="lokasi1">N/A</td>
+            <td id="lokasi2">N/A</td>
+            <td id="lokasi3">N/A</td>
+          </tr>
+          <tr>
+            <th>World ranking</th>
+            <td id="wrld_rank1">N/A</td>
+            <td id="wrld_rank2">N/A</td>
+            <td id="wrld_rank3">N/A</td>
+          </tr>
+          <tr>
+            <th>Teaching</th>
+            <td id="teaching1">N/A</td>
+            <td id="teaching2">N/A</td>
+            <td id="teaching3">N/A</td>
+          </tr>
+          <tr>
+            <th>Teaching Points Needed to next rank</th>
+            <td id="point1">N/A</td>
+            <td id="point2">N/A</td>
+            <td id="point3">N/A</td>
+          </tr>
+          <tr>
+            <th>Research</th>
+            <td id="research1">N/A</td>
+            <td id="research2">N/A</td>
+            <td id="research3">N/A</td>
+          </tr>
+          <tr>
+            <th>Citations</th>
+            <td id="citation1">N/A</td>
+            <td id="citation2">N/A</td>
+            <td id="citation3">N/A</td>
+          </tr>
+          <tr>
+            <th>International Outlook</th>
+            <td id="outlook1">N/A</td>
+            <td id="outlook2">N/A</td>
+            <td id="outlook3">N/A</td>
+          </tr>
+          <!-- //ini juga -->
+
+        </table>
+      </div>
     </div>
-    
-
+    <canvas id="chartTeaching"></canvas>
+    <canvas id="chartResearch"></canvas>
+    <canvas id="chartCitation"></canvas>
+    <canvas id="chartOutlook"></canvas>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js "></script>
-</body>
-
+  </body>
 </html>
 
 <script src="src/universitas.js"></script>
