@@ -14,6 +14,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js "></script>
+    <script type="text/javascript" src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
     <style>
       td > img {
         width: 100%;
@@ -21,7 +24,7 @@
         object-fit: contain;
       }
     </style>
-    <title>Title</title>
+    <title>Ranking Bossss</title>
   </head>
 
   <body>
@@ -136,17 +139,19 @@
             <td id="outlook3">N/A</td>
           </tr>
           <!-- //ini juga -->
-
         </table>
       </div>
     </div>
-    <canvas id="chartTeaching"></canvas>
-    <canvas id="chartResearch"></canvas>
-    <canvas id="chartCitation"></canvas>
-    <canvas id="chartOutlook"></canvas>
+    <!-- <canvas id="chartTeaching"></canvas> -->
+    <!-- <canvas id="chartResearch"></canvas> -->
+    <!-- <canvas id="chartCitation"></canvas> -->
+    <!-- <canvas id="chartOutlook"></canvas> -->
+    <canvas id="combinedChart"></canvas>
+    <!-- Gimana cara gabung ada line chart dan bar chart pada sat ucanvas?-->
+    <canvas id="lineChart"></canvas>
+    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+    
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js "></script>
   </body>
 </html>
 

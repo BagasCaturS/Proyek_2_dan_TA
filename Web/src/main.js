@@ -97,7 +97,123 @@ for (var i = 1; i < universitas.length; i++) {
   citationValues.push(universitas[i].citation);
   outlookValues.push(universitas[i].int_outlook);
 }
+// /////////////////////////////////////
+var ctx = document.getElementById('combinedChart').getContext('2d');
+new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: teachingValues.map((_, i) => `University ${i + 1}`),
+    datasets: [
+      {
+        label: 'Teaching',
+        data: teachingValues,
+        backgroundColor: 'rgba(75, 192, 192, 0.6)',
+        borderColor: 'rgba(75, 192, 192, 1)',
+        borderWidth: 1
+      },
+      {
+        label: 'Outlook',
+        data: outlookValues,
+        backgroundColor: 'rgba(255, 99, 132, 0.6)',
+        borderColor: 'rgba(255, 99, 132, 1)',
+        borderWidth: 1
+      },
+      {
+        label: 'Research',
+        data: researchValues,
+        backgroundColor: 'rgba(54, 162, 235, 0.6)',
+        borderColor: 'rgba(54, 162, 235, 1)',
+        borderWidth: 1
+      },
+      {
+        label: 'Citations',
+        data: citationValues,
+        backgroundColor: 'rgba(54, 162, 12, 0.6)',
+        borderColor: 'rgba(54, 162, 12, 1)',
+        borderWidth: 1
+      },
+      // Add more datasets for other parameters
+    ]
+  },
+  options: {
+    responsive: true,
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
 
+// Add line chart
+var lineChartCtx = document.getElementById('lineChart').getContext('2d');
+new Chart(lineChartCtx, {
+  type: 'line',
+  data: {
+    labels: teachingValues.map((_, i) => `University ${i + 1}`),
+    datasets: [
+      {
+        label: 'Teaching',
+        data: teachingValues,
+        borderColor: 'rgba(75, 192, 192, 1)',
+        backgroundColor: 'rgba(0, 0, 0, 0)',
+        borderWidth: 1
+      },
+      // Add more datasets for other parameters
+    ]
+  },
+  options: {
+    responsive: true,
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+
+window.onload = function () {
+  var chart = new CanvasJS.Chart("chartContainer",
+  {
+    title:{
+      text: "A Combination of Column & Line Chart"
+    
+    },   
+    data: [{        
+      type: "column",
+      dataPoints: [
+      { x: teachingValues, y: 171 },
+      { x: 20, y: 155},
+      { x: 30, y: 150 },
+      { x: 40, y: 165 },
+      { x: 50, y: 195 },
+      { x: 60, y: 168 },
+      { x: 70, y: 128 },
+      { x: 80, y: 134 },
+      { x: 90, y: 114}
+      ]
+    },
+    {        
+      type: "line",
+      dataPoints: [
+      { x: 10, y: 71 },
+      { x: 20, y: 55},
+      { x: 30, y: 50 },
+      { x: 40, y: 65 },
+      { x: 50, y: 95 },
+      { x: 60, y: 68 },
+      { x: 70, y: 28 },
+      { x: 80, y: 34 },
+      { x: 90, y: 14}
+      ]
+    }
+      
+    ]
+  });
+
+  chart.render();
+}
+/////////////////////////////////////////
 // Create a bar chart for Teaching parameter
 var ctxTeaching = document.getElementById('chartTeaching').getContext('2d');
 new Chart(ctxTeaching, {
